@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube-Shorts-Blocker",
+    "version": "1.0",
+
+    "permissions": ["tabs"],
+  
+    "description": "Redirects user to YouTube start page if clicked on the shorts tab.",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": []
+      }
+    ],
+
+    "background": {
+      "scripts": ["blocker.js"]
+    }
+  }
+  
